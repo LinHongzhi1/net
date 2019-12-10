@@ -15,13 +15,13 @@
 	<body>
 
 		<!-- Header -->
-			<header id="header" style="background-color:#cde0fe">
+			<header id="header">
 				<h1><strong><a href="index.html">Tumor</a></strong> by medical informatics</h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="generic.html">method</a></li>
-                        <li><a>Process</a></li>
+                        <li><a href="process.html">process</a></li>
 						<li><a href="elements.html">result</a></li>
 					</ul>
 				</nav>
@@ -30,9 +30,13 @@
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
 		<!-- Main -->
-			<section id="main" class="wrapper style2 special">
+			<section id="main" class="wrapper">
 				<div class="container">
+                    <header class="major special">
+						<h2>result</h2>
+					</header>
                    <div class="feature-grid">
+                       <!--node1-->
 				        <div class="feature">
                             <div class="content">
 				            <header>
@@ -41,6 +45,7 @@
 				                 <p>first:癌症病患年齡分布<br>second:癌症病患男女年齡分布<br>third:良性惡性腫瘤男女年齡分布<br>fourth:良性惡性腫瘤男女分布</p>
                            </div>
 				       </div>
+                       <!--node2-->
 				   <div class="feature">
                        <div class="content">
 							<header>
@@ -49,26 +54,70 @@
 								<p>篩選方式<br>樹狀圖:篩選所有疾病盛行率前10名<br>表格:篩選所有疾病盛行率前20名<br>右上角為罹患該疾病分布</p>
                            </div>
                    </div>
+                       <!--node3-->
 				   <div class="feature">
                        <div class="content">
 							<header>
 								<a href="#three" class="button"><span style="font-size:25px">共患率</span></a>
 							</header>
-								<p>12465</p>
+								<p>篩選方式<br>篩選盛行率前20的疾病做為標靶，再各別搜尋這20個疾病前5的關聯(依關聯人數排序)，共100個關聯<br>左圖：節點大小為盛行率乘100、link為共患率值越大線越粗顏色越深<br>右圖:節點大小為degree數、相同類型的link為一樣的顏色<br>G:一般疾病、B:良性腫瘤、M:惡性腫瘤<br>MM:惡性腫瘤與惡性腫瘤關聯</p>
                        </div>
                   </div>
-
+                       <!--node4-->
 				  <div class="feature">
                       <div class="content">
 							<header>
 								 <a href="#four" class="button"><span style="font-size:25px">轉移率</span></a>
 							</header>
-								<p>1313</p>
+								<p>篩選方式<br>篩選盛行率前20的疾病做為標靶，再各別搜尋這20個疾病前5的關聯(依轉移率排序)，共100個關聯<br>左圖：節點大小為盛行率乘100、link為轉移率值越大線越粗顏色越深<br>右圖:節點大小為degree數、相同類型的link為一樣的顏色<br>G:一般疾病、B:良性腫瘤、M:惡性腫瘤<br>M to M:惡性腫瘤轉移惡性腫瘤</p>
                           </div>
                   </div>
 				</div>
                </div>
 			</section>
+
+            <section id="Section1" class="wrapper style2 special">
+                <div class="container">
+                    <div class="feature-grid">
+                                 <!--node5-->
+                  <div class="feature">
+                      <div class="content">
+							<header>
+								 <a href="#five" class="button"><span style="font-size:25px">1</span></a>
+							</header>
+								<p></p>
+                          </div>
+                  </div>
+                       <!--node6-->
+                  <div class="feature">
+                      <div class="content">
+							<header>
+								 <a href="#six" class="button"><span style="font-size:25px">2</span></a>
+							</header>
+								<p></p>
+                          </div>
+                  </div>
+                       <!--node7-->
+                  <div class="feature">
+                      <div class="content">
+							<header>
+								 <a href="#seven" class="button"><span style="font-size:25px">3</span></a>
+							</header>
+								<p></p>
+                          </div>
+                  </div>
+                       <!--node8-->
+                  <div class="feature">
+                      <div class="content">
+							<header>
+								 <a href="#eight" class="button"><span style="font-size:25px">4</span></a>
+							</header>
+								<p></p>
+                          </div>
+                  </div>
+                    </div>
+                </div>
+            </section>
 
             <!--one-->
 			<section id="one" class="wrapper style4 special">
@@ -100,6 +149,37 @@
                     <h2>轉移率</h2>
                     </header>
                 <iframe width="1200" height="690" src="https://app.powerbi.com/view?r=eyJrIjoiZWRiZGMzOTctZDQ1Yi00NjFiLTk5NTQtYjQ4NWVmNjhjMWFiIiwidCI6IjBlNDU4YzJlLWVlYmItNGQ2My1iOWVkLWEyNTM0ZDA1M2U3MCIsImMiOjEwfQ%3D%3D"></iframe>
+                <a href="#" class="button">HOME</a>
+             </section>
+
+            <!--fivr-->
+             <section id="five" class="wrapper style4 special">
+                 <header class="major">
+                    <h2>1</h2>
+                    </header>
+                <a href="#" class="button">HOME</a>
+             </section>
+
+            <!--six-->
+             <section id="six" class="wrapper style2 special">
+                 <header class="major">
+                    <h2>2</h2>
+                    </header>
+                <a href="#" class="button">HOME</a>
+             </section>
+            <!--seven-->
+             <section id="seven" class="wrapper style4 special">
+                 <header class="major">
+                    <h2>3</h2>
+                    </header>
+                <a href="#" class="button">HOME</a>
+             </section>
+
+            <!--eight-->
+             <section id="eight" class="wrapper style2 special">
+                 <header class="major">
+                    <h2>4</h2>
+                    </header>
                 <a href="#" class="button">HOME</a>
              </section>
 			

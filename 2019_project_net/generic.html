@@ -166,13 +166,52 @@
                                 <img src = "http://latex.codecogs.com/gif.latex?\ d(x,y)" height="25"/>為節點
                                 <img src = "http://latex.codecogs.com/gif.latex?\ y" height="15"/>到節點
                                 <img src = "http://latex.codecogs.com/gif.latex?\ x" height="15"/>的最短路徑，
-                                <img src = "http://latex.codecogs.com/gif.latex?\ N" height="15"/>為整個網絡的個數。
+                                <img src = "http://latex.codecogs.com/gif.latex?\ N" height="15"/>為整個網絡的個數。公式如下：<br>
+                                <img src="images/公式6.PNG" height="100">
                                 </span>
 							</div>
 							<div class="6u$ 12u$(medium)">
                                 <header class="major">
 								    <h2>接近中心性</h2>
                                     <p>Closeness Centrality</p>
+                                </header>
+                            </div>                 
+						</div>
+					</div>
+				</section>
+         <!--seven-->
+         <section id="seven" class="wrapper style1">
+					<div class="container 90%">
+						<div class="row 200%">
+							<div class="6u 12u$(medium)">
+                                <header class="major">
+								    <h2>基因相關性</h2>
+                                    <p>Correlation</p>
+                                </header>
+							</div>
+							<div class="6u$ 12u$(medium)">
+                                    <span style="font-size:20px">本專題使用雅卡爾指數(Jaccard index)，又稱並交比、雅卡爾相似係數，是用於比較樣本集的相似性與多樣性的統計量，雅卡爾係數能夠量度有限樣本集合的相似度，其定義為兩個集合交集大小與聯集大小之間的比例。分母為A疾病與B疾病間所有基因數的集合，分子為既屬於A疾病也屬於B疾病的基因數。公式如下：
+                                    <img src="images/公式7.PNG" height="100">
+                                    </span>
+                            </div>                 
+						</div>
+					</div>
+				</section>
+
+         <!--eight-->
+           <section id="eight" class="wrapper style1">
+					<div class="container 90%">
+						<div class="row 200%">
+							<div class="6u 12u$(medium)">
+                                <span style="font-size:20px">
+                                    從Polysearch2找到的癌症標靶基因，透過STRING找出對應的蛋白質交互作用，再將蛋白質關係用cytoscape進行拓樸分析，而為了找出重要性最高的前10%蛋白質，本研究將3種中心度進行排名，再將3項中心度排名進行平均排名。公式如下：<br>
+                                    <pre><code>Average Rank=(rank(CC)+rank(BC)+rank(Degree))/3</code></pre>
+                                </span>
+							</div>
+							<div class="6u$ 12u$(medium)">
+                                <header class="major">
+								    <h2>綜合排名</h2>
+                                    <p>Combined rank</p>
                                 </header>
                             </div>                 
 						</div>

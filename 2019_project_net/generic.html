@@ -59,15 +59,15 @@
 						<div class="row 200%">
 							<div class="6u 12u$(medium)">
 								<span style="font-size:20px">本專題使用相對風險(Relative Risk；RR)來量化任兩疾病之間的距離<br>
-                                    <img src = "http://latex.codecogs.com/gif.latex?\displaystyle RR_{ij}"height="20"/>是兩疾病同時罹患的風險比上隨機罹患之風險，其中
-                                    <img src = "http://latex.codecogs.com/gif.latex?\displaystyle C_{ij}"height="20"/>代表同時罹患
-                                    <img src = "http://latex.codecogs.com/gif.latex?\displaystyle i"height="20"/>、
-                                    <img src = "http://latex.codecogs.com/gif.latex?\displaystyle j"height="20"/>疾病的人數，
-                                    <img src = "http://latex.codecogs.com/gif.latex?\displaystyle N"height="15"/>代表總人數，
-                                    <img src = "http://latex.codecogs.com/gif.latex?\displaystyle P_{i}"height="18"/>、
-                                    <img src = "http://latex.codecogs.com/gif.latex?\displaystyle P_{j}"height="20"/>分別為
-                                    <img src = "http://latex.codecogs.com/gif.latex?\displaystyle i"height="20"/>疾病、
-                                    <img src = "http://latex.codecogs.com/gif.latex?\displaystyle j"height="20"/>疾病的盛行率，公式如下：</span><br><img src="images/公式2.PNG" height="100" >
+                                    <img src = "http://latex.codecogs.com/gif.latex?\ RR_{ij}"height="20"/>是兩疾病同時罹患的風險比上隨機罹患之風險，其中
+                                    <img src = "http://latex.codecogs.com/gif.latex?\ C_{ij}"height="20"/>代表同時罹患
+                                    <img src = "http://latex.codecogs.com/gif.latex?\ i"height="20"/>、
+                                    <img src = "http://latex.codecogs.com/gif.latex?\ j"height="20"/>疾病的人數，
+                                    <img src = "http://latex.codecogs.com/gif.latex?\ N"height="15"/>代表總人數，
+                                    <img src = "http://latex.codecogs.com/gif.latex?\ P_{i}"height="18"/>、
+                                    <img src = "http://latex.codecogs.com/gif.latex?\ P_{j}"height="20"/>分別為
+                                    <img src = "http://latex.codecogs.com/gif.latex?\ i"height="20"/>疾病、
+                                    <img src = "http://latex.codecogs.com/gif.latex?\ j"height="20"/>疾病的盛行率，公式如下：</span><br><img src="images/公式2.PNG" height="100" >
 							</div>
 							<div class="6u$ 12u$(medium)">
                                 <header class="major">
@@ -93,25 +93,25 @@
                                     <span style="font-size:20px">本專題使用馬可夫鏈(discrete-time Markov chain；DTMC)來量化任兩疾病之間的距離、使用
                                         <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000353">A Dynamic Network Approach for the Study of Human Phenotypes
                                         </a>中確認轉移方向公式來確認轉移方向<br>
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle P_{ij}"height="20"/>是先罹患
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle i"height="20"/>疾病先再罹患
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle j"height="20"/>疾病的人數比上罹患
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle i"height="20"/>疾病的人數，其中
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle L_{i \to j}"height="20"/>代表先罹患
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle i"height="20"/>再罹患
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle j"height="20"/>疾病的人數，
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle N_{i}"height="20"/>代表罹患
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle i"height="20"/>疾病人數，公式如下：
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ P_{ij}"height="20"/>是先罹患
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ i"height="20"/>疾病先再罹患
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ j"height="20"/>疾病的人數比上罹患
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ i"height="20"/>疾病的人數，其中
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ L_{i \to j}"height="20"/>代表先罹患
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ i"height="20"/>再罹患
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ j"height="20"/>疾病的人數，
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ N_{i}"height="20"/>代表罹患
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ i"height="20"/>疾病人數，公式如下：
                                         </span><br><img src="images/公式3.PNG" height="100" ><span style="font-size:20px">
                                         <br>轉移計算過程中由於沒有一個人完整的就診紀錄無法準確判斷疾病的走向，經過討論，本專題透過比較
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle L_{i \to j}"height="20"/>與
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle L_{j \to i}"height="20"/>來判斷疾病的走向，
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle L_{i \to j}"height="20"/>為
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle i"height="20"/>疾病轉移到
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle j"height="20"/>疾病人數、
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle L_{j \to i}"height="20"/>為
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle j"height="20"/>疾病轉移到
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle i"height="20"/>疾病的人數，
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ L_{i \to j}"height="20"/>與
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ L_{j \to i}"height="20"/>來判斷疾病的走向，
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ L_{i \to j}"height="20"/>為
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ i"height="20"/>疾病轉移到
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ j"height="20"/>疾病人數、
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ L_{j \to i}"height="20"/>為
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ j"height="20"/>疾病轉移到
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ i"height="20"/>疾病的人數，
                                         公式如下：<br></span><img src="images/公式4.PNG" height="100" >
                             </div>                 
 						</div>
@@ -141,17 +141,17 @@
 						<div class="row 200%">
 							<div class="6u 12u$(medium)">
                                 <header class="major">
-								    <h2>介數中心性</h2>
+								    <h2>中介中心性</h2>
                                     <p>Betweenness Centrality</p>
                                 </header>
 							</div>
 							<div class="6u$ 12u$(medium)">
-                                    <span style="font-size:20px">介數中心性表示某節點與其他節點之間的互動程度，一個高介數中心性的節點在網絡中有更強的控制能力，因為更多的信息傳遞時將通過該節點。
+                                    <span style="font-size:20px">在網絡圖論概念中，經過某節點並連接兩點的最短路徑占這兩點之間的最短路徑總數比。若此節點擔任”中介”的次數越高，其中介中心性越高。
                                         <br><img src = "http://latex.codecogs.com/gif.latex?\sigma_{st}" height="15"/>是節點
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle s"height="10"/>到節點
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle t"height="10"/>的所有最短路徑之和、
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ s"height="10"/>到節點
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ t"height="15"/>的所有最短路徑之和、
                                         <img src = "http://latex.codecogs.com/gif.latex?\sigma_{st}(v)" height="23"/>這些路徑經過
-                                        <img src = "http://latex.codecogs.com/gif.latex?\displaystyle v" height="10"/>的次數，公式如下：<br> <img src="images/公式5.PNG" height="100"></span>
+                                        <img src = "http://latex.codecogs.com/gif.latex?\ v" height="10"/>的次數，公式如下：<br> <img src="images/公式5.PNG" height="100"></span>
                             </div>                 
 						</div>
 					</div>
@@ -162,11 +162,16 @@
 					<div class="container 90%">
 						<div class="row 200%">
 							<div class="6u 12u$(medium)">
-                                <p></p>
+                                <span style="font-size:20px">在網路中計算某一節點到其他所有的節點之距離的總和，總和越小說明這個點到其他所有點的路徑越短，也就說明這個點距離所有的點越近。
+                                <img src = "http://latex.codecogs.com/gif.latex?\ d(x,y)" height="25"/>為節點
+                                <img src = "http://latex.codecogs.com/gif.latex?\ y" height="15"/>到節點
+                                <img src = "http://latex.codecogs.com/gif.latex?\ x" height="15"/>的最短路徑，
+                                <img src = "http://latex.codecogs.com/gif.latex?\ N" height="15"/>為整個網絡的個數。
+                                </span>
 							</div>
 							<div class="6u$ 12u$(medium)">
                                 <header class="major">
-								    <h2>親密度中心性</h2>
+								    <h2>接近中心性</h2>
                                     <p>Closeness Centrality</p>
                                 </header>
                             </div>                 

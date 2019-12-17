@@ -60,7 +60,7 @@
 							<header>
 								<a href="#three" class="button"><span style="font-size:25px">共患率</span></a>
 							</header>
-								<p>篩選方式<br>篩選盛行率前20的疾病做為標靶，再各別搜尋這20個疾病前5的關聯(依關聯人數排序)，共100個關聯<br>左圖：節點大小為盛行率乘100、link為共患率值越大線越粗顏色越深<br>右圖:節點大小為degree數、相同類型的link為一樣的顏色<br>G:一般疾病、B:良性腫瘤、M:惡性腫瘤<br>MM:惡性腫瘤與惡性腫瘤關聯</p>
+								<p>篩選方式<br>篩選盛行率前20的疾病做為標靶疾病，再各別搜尋這20個疾病前5的關聯(依關聯人數排序)，共100個關聯<br>左圖：節點大小為盛行率乘100、link為共患率值越大線越粗顏色越深<br>右圖:節點大小為degree數、相同類型的link為一樣的顏色<br>G:一般疾病、B:良性腫瘤、M:惡性腫瘤<br>MM:惡性腫瘤與惡性腫瘤關聯</p>
                        </div>
                   </div>
                        <!--node4-->
@@ -69,7 +69,7 @@
 							<header>
 								 <a href="#four" class="button"><span style="font-size:25px">轉移率</span></a>
 							</header>
-								<p>篩選方式<br>篩選盛行率前20的疾病做為標靶，再各別搜尋這20個疾病前5的關聯(依轉移率排序)，共100個關聯<br>左圖：節點大小為盛行率乘100、link為轉移率值越大線越粗顏色越深<br>右圖:節點大小為degree數、相同類型的link為一樣的顏色<br>G:一般疾病、B:良性腫瘤、M:惡性腫瘤<br>M to M:惡性腫瘤轉移惡性腫瘤</p>
+								<p>篩選方式<br>篩選盛行率前20的疾病做為標靶疾病，再各別搜尋這20個疾病前5的關聯(依轉移率排序)，共100個關聯<br>左圖：節點大小為盛行率乘100、link為轉移率值越大線越粗顏色越深<br>右圖:節點大小為degree數、相同類型的link為一樣的顏色<br>G:一般疾病、B:良性腫瘤、M:惡性腫瘤<br>M to M:惡性腫瘤轉移惡性腫瘤</p>
                           </div>
                   </div>
 				</div>
@@ -83,38 +83,42 @@
                   <div class="feature">
                       <div class="content">
 							<header>
-								 <a href="#five" class="button"><span style="font-size:25px">泛癌症PPI網絡圖</span></a>
+								 <a href="#five" class="button"><span style="font-size:25px">泛癌症骨幹網路</span></a>
 							</header>
-								<p></p>
+								<p>篩選方式<br>篩選各癌症combine rank前10%的蛋白質交互作用建立泛癌症骨幹網路，以蛋白質為節點、關聯性為線，關聯性越強顏色越紅。</p>
                           </div>
                   </div>
                        <!--node6-->
                   <div class="feature">
                       <div class="content">
 							<header>
-								 <a href="#six" class="button"><span style="font-size:25px">癌症基因相關性</span></a>
+								 <a href="#six" class="button" style="right" ><span style="font-size:25px">癌症標靶基因與基因蛋白之分布</span></a>
 							</header>
-								<p></p>
+								<p>比較標靶基因與基因蛋白在各癌症之間的相關性。<br>左圖:與各癌症相關性之分布<br>右圖:所篩選的癌症為何<br>探討在不同資料集癌症間的相關性</p>
                           </div>
                   </div>
-                       <!--node7-->
-                  <div class="feature">
-                      <div class="content">
-							<header>
-								 <a href="#seven" class="button"><span style="font-size:25px">癌症相關性網絡</span></a>
-							</header>
-								<p></p>
-                          </div>
-                  </div>
-                       <!--node8-->
+
+                    <!--node8-->
                   <div class="feature">
                       <div class="content">
 							<header>
 								 <a href="#eight" class="button"><span style="font-size:25px">轉移矩陣</span></a>
 							</header>
-								<p></p>
+								<p>篩選方式<br>篩選盛行率前20的疾病做為標靶疾病，再各別搜尋這20個疾病前5關聯(依轉移人數排序)的疾病<br>更進一步了解腫瘤病患在疾病上的轉移方向</p>
                           </div>
                   </div>
+
+
+                       <!--node7-->
+                  <div class="feature">
+                      <div class="content">
+							<header>
+								 <a href="#seven" class="button"><span style="font-size:25px">癌症標靶基因與基因蛋白網路</span></a>
+							</header>
+								<p>比較標靶基因與基因蛋白在各癌症之間的相關性。<br>左圖:癌症相關性(基因蛋白)<br>右圖:癌症相關性(標靶基因)<br>可移動滑軌可調整顯示的排名數</p>   
+                          </div>
+                  </div>
+                       
                     </div>
                 </div>
             </section>
@@ -155,7 +159,7 @@
             <!--fivr-->
              <section id="five" class="wrapper style4 special">
                  <header class="major">
-                    <h2>泛癌症PPI網絡圖</h2>
+                    <h2>泛癌症骨幹網路</h2>
                     </header>
                  <iframe width="1200" height="690" src="https://app.powerbi.com/view?r=eyJrIjoiZWNhNGZmM2EtNWUwMS00YjhhLWI4NTEtZjI5NWFmZTg5NzdmIiwidCI6IjBlNDU4YzJlLWVlYmItNGQ2My1iOWVkLWEyNTM0ZDA1M2U3MCIsImMiOjEwfQ%3D%3D"></iframe>
                  <a href="#" class="button">HOME</a>
@@ -164,7 +168,7 @@
             <!--six-->
              <section id="six" class="wrapper style2 special">
                  <header class="major">
-                    <h2>癌症基因相關性</h2>
+                    <h2>癌症標靶基因與基因蛋白之分布</h2>
                     </header>
                  <iframe width="1200" height="690" src="https://app.powerbi.com/view?r=eyJrIjoiYzQyMTAzODktMjA1Yy00YTUzLWFkNjQtMmU2ZmFhMzkwZDEzIiwidCI6IjBlNDU4YzJlLWVlYmItNGQ2My1iOWVkLWEyNTM0ZDA1M2U3MCIsImMiOjEwfQ%3D%3D"></iframe>
                 <a href="#" class="button">HOME</a>
@@ -172,7 +176,7 @@
             <!--seven-->
              <section id="seven" class="wrapper style4 special">
                  <header class="major">
-                    <h2>癌症相關性網絡</h2>
+                    <h2>癌症標靶基因與基因蛋白網路</h2>
                     </header>
                  <iframe width="1200" height="690" src="https://app.powerbi.com/view?r=eyJrIjoiN2JhNTQ1ZWMtM2Y5ZC00YjQ2LWI4OGYtNGUwZWUyMjg5ZjI4IiwidCI6IjBlNDU4YzJlLWVlYmItNGQ2My1iOWVkLWEyNTM0ZDA1M2U3MCIsImMiOjEwfQ%3D%3D"></iframe>
                 <a href="#" class="button">HOME</a>

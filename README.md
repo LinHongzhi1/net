@@ -19,5 +19,5 @@
 ### 基因資料庫
 1.泛癌症骨幹網路\
 2.癌症標靶基因與基因蛋白之分布\
-3.癌症標靶基因與基因蛋白網路
+3.癌症標靶基因與基因蛋白網路\
 https://github.com/LinHongzhi1/net/blob/master/2019_project_net/elements.html
